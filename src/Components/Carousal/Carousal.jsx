@@ -1,14 +1,16 @@
 import styles from './Carousal.module.css';
-// Static imports
-import MatteredLogo from '../../../public/assets/Home/Mattered.png';
-import SubwayLogo from '../../../public/assets/Home/Subway.png';
-import ClasspassLogo from '../../../public/assets/Home/ClassPass.png';
-import NationalBankLogo from '../../../public/assets/Home/NationalBank.png';
-import BoltShiftLogo from '../../../public/assets/Home/BoltShift.png';
-import LightBoxLogo from '../../../public/assets/Home/LightBox.png';
-import CocaColaLogo from '../../../public/assets/Home/CocaCola.png';
+import MatteredLogo from '../../../public/assets/Home/Mattered.png'
+// Importing logos individually
+
+import SubwayLogo from '/assets/Home/Subway.png';
+import ClasspassLogo from '/assets/Home/ClassPass.png';
+import NationalBankLogo from '/assets/Home/NationalBank.png';
+import BoltShiftLogo from '/assets/Home/BoltShift.png';
+import LightBoxLogo from '/assets/Home/LightBox.png';
+import CocaColaLogo from '/assets/Home/CocaCola.png';
 
 const MarqueeCarousel = () => {
+  // Array of imported logos
   const logos = [
     MatteredLogo,
     SubwayLogo,
