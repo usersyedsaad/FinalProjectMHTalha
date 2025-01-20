@@ -10,7 +10,7 @@
   padding-left: 5.5%;
   padding-right: 5.5%;
   width: 100%;
-  
+  background-color: var(--color-bg);
 }
 
 .title {
@@ -75,6 +75,9 @@
   text-decoration: none;
   margin: 8px 0;
 }
+.menuItems a:hover{
+  color: white;
+}
 
 .menuOpen {
   display: flex; /* Show dropdown when open */
@@ -102,6 +105,9 @@
     list-style: none;
     gap:32px;
     width: 694px;
+  }
+  .menuItems a:hover{
+    color: white;
   }
   .menuItems ul{
     list-style: none;

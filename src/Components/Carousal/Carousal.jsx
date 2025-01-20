@@ -1,13 +1,12 @@
-
-
-import styles from "./Carousal.module.css"
-import MatteredLogo from "/assets/Home/Mattered.png"
-import SubwayLogo from "/assets/Home/Subway.png"
-import ClasspassLogo from "/assets/Home/ClassPass.png"
-import NationalBankLogo from "/assets/Home/NationalBank.png"
-import BoltShiftLogo from "/assets/Home/BoltShift.png"
-import LightBoxLogo from "/assets/Home/LightBox.png"
-import CocaColaLogo from "/assets/Home/CocaCola.png"
+import styles from './Carousal.module.css';
+// Static imports
+import MatteredLogo from '../../../public/assets/Home/Mattered.png';
+import SubwayLogo from '../../../public/assets/Home/Subway.png';
+import ClasspassLogo from '../../../public/assets/Home/ClassPass.png';
+import NationalBankLogo from '../../../public/assets/Home/NationalBank.png';
+import BoltShiftLogo from '../../../public/assets/Home/BoltShift.png';
+import LightBoxLogo from '../../../public/assets/Home/LightBox.png';
+import CocaColaLogo from '../../../public/assets/Home/CocaCola.png';
 
 const MarqueeCarousel = () => {
   const logos = [
@@ -18,7 +17,6 @@ const MarqueeCarousel = () => {
     BoltShiftLogo,
     LightBoxLogo,
     CocaColaLogo,
-    
   ];
 
   return (
@@ -26,19 +24,13 @@ const MarqueeCarousel = () => {
       <div className={styles.animateMarquee}>
         {/* Render logos */}
         {logos.map((logo, index) => (
-          <div
-            key={index}
-            className={styles.indi-logo}
-          >
+          <div key={index} className={styles.indiLogo}>
             <img src={logo} alt={`Logo ${index + 1}`} className={styles.image} />
           </div>
         ))}
         {/* Repeat logos for continuous scrolling */}
         {logos.map((logo, index) => (
-          <div
-            key={`duplicate-${index}`}
-            className={styles.indi-logo}
-          >
+          <div key={`duplicate-${index}`} className={styles.indiLogo}>
             <img src={logo} alt={`Logo Duplicate ${index + 1}`} className={styles.image} />
           </div>
         ))}

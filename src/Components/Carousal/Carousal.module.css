@@ -11,7 +11,7 @@
   display: flex;
   white-space: nowrap;
   animation: marquee 15s linear infinite;
-  gap: 98px;
+  
   align-items: center;
 }
 .indi-logo{
@@ -20,11 +20,11 @@
   justify-items: center;
   align-items: center;
   transition: transform 0.5s ease;
-  width: 50%;
+  width: 21%;
 }
 
 .image{
-  width: 100px;
+  width: 63%;
 }
 .indi-logo:hover{
   transform: scale(1.25);
@@ -34,6 +34,8 @@
   position: relative;
   width: 100%;
   overflow-x: hidden;
-  margin-top: 167px;
+  height: auto;
+  margin-top: clamp(100px, 10vw, 250px);
+  overflow-y: hidden;
 }
 
