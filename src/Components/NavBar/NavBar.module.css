@@ -1,0 +1,112 @@
+@import "../../vars.css";
+
+.navBar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 36px;
+  z-index: 2;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  width: 100%;
+  
+}
+
+.title {
+  display: inline-flex;
+  color: #a4a7ac;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  text-decoration: none;
+}
+
+.elipse {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid white;
+  margin-right: 16px;
+}
+
+.menu {
+  display: flex;
+  position: relative;
+  z-index: 1000;
+}
+
+.menuBtn {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  z-index: 1001; /* Ensures menu button is above the menu */
+}
+
+.menuItems {
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  position: absolute; /* Positions dropdown relative to menuBtn */
+  top: 50px; /* Adjusts the position below the button */
+  right: 0; /* Aligns to the right edge */
+  background: linear-gradient(
+    0deg,
+    rgba(25, 55, 109, 0.2) 0%,
+    rgba(25, 55, 109, 1) 100%
+  );
+  padding: 24px 33px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  z-index: 1000; /* Dropdown menu appears above everything */
+  border-radius: 8px;
+  list-style: none;
+  gap:7px;
+  width: 191px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menuItems a{
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  text-decoration: none;
+  margin: 8px 0;
+}
+
+.menuOpen {
+  display: flex; /* Show dropdown when open */
+}
+
+.navButton {
+  background-color: var(--color-hl);
+  padding: 14px 32px;
+  border-radius: 32px;
+  border: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .menuBtn {
+    display: none; /* Hide menu button on large screens */
+  }
+  .menuItems {
+    display: inline-flex; /* Inline menu for larger screens */
+    flex-direction: row;
+    position: static; /* Default flow */
+    justify-content: end;
+    background: none; /* Remove background */
+    box-shadow: none; /* Remove shadow */
+    padding: 0;
+    list-style: none;
+    gap:32px;
+    width: 694px;
+  }
+  .menuItems ul{
+    list-style: none;
+  }
+  .navButton{
+    margin-left: 40px;
+  }
+}

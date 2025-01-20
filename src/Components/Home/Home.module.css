@@ -1,0 +1,102 @@
+@import '../../vars.css';
+
+.home{
+  margin-top: 95px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.centerContent{
+  height: 414px;
+  width: 78.4%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 292px;
+
+}
+
+.textContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; 
+}
+
+.textContent h1{
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: clamp(16px, 2.13vw, 36px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;  
+}
+
+.textContent p{
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: clamp(30px, 3.89vw, 80px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: clamp(-1px, -0.15vw, -2.24px); 
+}
+
+.socialButton{
+  display: flex;
+  padding: clamp(12px, 1.11vw, 16px) clamp(40px, 5.55vw, 80px);
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 32px;
+  background-color: #01B7C3;  
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: clamp(16px, 1.25vw, 20px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: clamp(-0.2px, -0.03vw, -0.4px);
+}
+
+.socialLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.Icons{
+  display: flex;
+  gap: 20px;
+}
+
+.highlight{
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 41.5px;
+  background: #01B7C3;
+  color: var(--color-bg);
+  display: inline-block;
+}
+
+@media screen and (max-width:1024px) {
+  .socialLinks{
+    flex-direction: column;
+  }
+}

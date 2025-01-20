@@ -1,0 +1,12 @@
+:root{
+  /* colors */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A4A7AC;
+  --color-hl:#01B7C3;
+  --color-bg:#1B2230;
+  
+  /* fonts */
+
+  --font-poppins: "Poppins";
+  
+}
