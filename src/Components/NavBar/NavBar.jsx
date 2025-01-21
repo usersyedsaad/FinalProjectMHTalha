@@ -1,5 +1,7 @@
 import styles from "./NavBar.module.css";
-import { getImageUrl } from "../../utils";
+import menuOpenIcon from '../../assets/Home/Home/menuOpenIcon.png'
+import menuCloseIcon from '../../assets/Home/Home/menuCloseIcon.png'
+import EmailIcon from '../../assets/NavBar/EmailIcon.svg'
 import { useState } from "react";
 
 const NavBar = () => {
@@ -9,7 +11,7 @@ const NavBar = () => {
     <nav className={styles.navBar}>
       <a className={styles.title} href="">
         <span className={styles.elipse}>
-          <img src={getImageUrl("NavBar/EmailIcon.svg")} alt="Email Icon" />
+          <img src={EmailIcon} alt="Email Icon" />
         </span>
         <p>HMTalha@gmail.com</p>
       </a>
@@ -20,8 +22,8 @@ const NavBar = () => {
           className={styles.menuBtn}
           src={
             menuOpen
-              ? getImageUrl("NavBar/menuCloseIcon.png")
-              : getImageUrl("NavBar/menuOpenIcon.png")
+              ? menuOpenIcon
+              : menuCloseIcon
           }
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)} // Toggle menu
