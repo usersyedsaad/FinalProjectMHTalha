@@ -1,0 +1,57 @@
+.workCardContainer{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: clamp(20px, 2.78vw, 40px); /* Flexible font size */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: clamp(-0.8px, -0.3vw, -1.6px);
+  width: clamp(320px, 40vw, 620px);
+  overflow-x: hidden;
+  object-fit:scale-down;
+}
+
+.cardContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: clamp(315px,40vw,595px);
+}
+.cardName {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: clamp(24px, 4vw, 40px); /* Clamps font-size between 24px and 40px */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: clamp(-1.2px, -0.3vw, -1.6px); /* Clamps letter-spacing */
+}
+
+.cardDescription {
+  color: #A4A7AC;
+  text-align: end;
+  font-family: Poppins;
+  font-size: clamp(12px, 2.5vw, 16px); /* Clamps font-size between 12px and 16px */
+  font-style: normal;
+  font-weight: 500;
+  line-height: clamp(24px, 5vw, 38px); /* Clamps line-height */
+  display: inline-block;
+}
+
+
+.image{
+  width: clamp(320px, 40vw, 620px); /* Flexible width */
+  height: clamp(400px, 50vw, 628px); /* Flexible height */
+  flex-shrink: 0;
+  
+}
+
+.imageContainer{
+  display: flex;
+  width: clamp(320px, 40vw, 570px); /* Flexible width */
+  height: clamp(400px, 50vw, 625px); /* Flexible height */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+}

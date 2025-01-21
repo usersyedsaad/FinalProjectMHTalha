@@ -1,0 +1,62 @@
+.container {
+  color: white; /* text-white */
+  width: 100%; /* w-full */
+  margin-left: auto; /* ml-auto */
+  margin-right: auto; /* mr-auto */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  gap: 32px; /* gap-8 */
+  margin-top: 88px; /* mt-22 (22 * 4px = 88px) */
+   /* min-h-screen */
+  padding: 0 20px; /* px-5 (5 * 4px = 20px) */
+  height: auto;
+}
+
+.header {
+  display: flex; /* flex */
+  justify-content: space-between; /* justify-between */
+  align-items: center; /* items-center */
+  flex-direction: column;
+  
+}
+
+.title {
+  font-size: clamp(20px, 3vw, 56px); /* text-xl, md:text-5xl, lg:text-[56px] */
+  font-weight: 300; /* font-[300] */
+  line-height: normal;
+  letter-spacing: clamp(-1px, -1.5vw, -2.24px); /* tracking-[-2.24px] */
+}
+
+.description {
+  font-size: clamp(12px, 2vw, 24px); /* text-sm, md:text-xl, lg:text-2xl */
+  font-weight: 300; /* font-[300] */
+  line-height: normal;
+  letter-spacing: clamp(-0.8px, -0.6vw, -0.96px); /* tracking-[-0.96px] */
+}
+
+.workCards {
+  width: clamp(320px, 40vw, 620px); /* w-full */
+  max-width: 1024px; /* max-w-screen-lg */
+  margin-left: auto;
+  margin-right: auto;
+  display: grid; /* grid */
+  grid-template-columns: repeat(1, 1fr); /* grid-cols-1 */
+  gap: 40px 40px ; /* gap-x-10 gap-y-10 (10 * 4px = 40px) */
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .workCards {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+    margin-left: auto;
+  }
+  .workCardContainer{
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  .header{
+    flex-direction: row;
+  }
+}

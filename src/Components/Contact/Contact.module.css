@@ -1,0 +1,110 @@
+@import '../../vars.css';
+
+.blueButton {
+  display: flex;
+  padding: clamp(12px, 1.5vw, 16px) clamp(32px, 4vw, 48px); /* Dynamic padding */
+  justify-content: center;
+  align-items: center;
+  gap: clamp(8px, 2vw, 16px); /* Gap adjusts for screen size */
+  border-radius: clamp(16px, 3vw, 32px); /* Adaptive border-radius */
+  background: #01B7C3;
+  border: none;
+  color: #1B2230;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(16px, 2vw, 20px); /* Font size scales */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: clamp(-0.2px, -0.4vw, -0.4px);
+}
+
+.grayButton {
+  display: flex;
+  padding: clamp(12px, 1.5vw, 16px) clamp(32px, 4vw, 48px);
+  justify-content: center;
+  align-items: center;
+  gap: clamp(8px, 2vw, 16px);
+  border-radius: clamp(16px, 3vw, 32px);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.10);
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(16px, 2vw, 20px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: clamp(-0.2px, -0.4vw, -0.4px);
+}
+
+.grayButtons {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(4px, 1vw, 8px);
+}
+
+.socialButtons {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(16px, 4vw, 40px);
+  color: #FFF;
+}
+
+.textContent {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(16px, 2vw, 24px);
+}
+
+.textContent h4 {
+  color: #FFF;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(28px, 4vw, 56px); /* Font size adjusts */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: clamp(-1px, -2vw, -2.24px);
+}
+
+.textContent p {
+  color: #A4A7AC;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: clamp(-0.24px, -0.5vw, -0.48px);
+}
+
+.container {
+  padding-top: clamp(128px, 10vw, 256px);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(32px, 4vw, 64px);
+  width: clamp(320px, 80vw, 1093px); /* Scales width for smaller screens */
+  margin-bottom: clamp(64px, 10vw, 148px);
+  margin-left: clamp(16px, 5vw, 267px);
+}
+
+.blackArrow {
+  filter: invert(100%) brightness(0%);
+}
+
+.highlight {
+  color: #01B7C3;
+}
+
+@media  (max-width:1153px) {
+  .socialButtons{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:760px){
+  .grayButtons{
+    flex-direction: column;
+  }
+}

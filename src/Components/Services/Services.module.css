@@ -1,0 +1,104 @@
+@import '../../vars.css';
+
+
+.cardContainer {
+  display: flex;
+  width: clamp(320px, 28.13vw, 405px); /* Flexible width */
+  padding-left: clamp(16px, 2.22vw, 32px); /* Flexible padding */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(30px, 3.47vw, 50px); /* Flexible gap */
+  flex-shrink: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.20);
+  
+}
+
+.cardNumber {
+  color: rgba(1, 183, 195, 0.30);
+  font-family: Poppins;
+  font-size: clamp(56px, 7.78vw, 112px); /* Flexible font size */
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1; /* Line height scales automatically with font size */
+  letter-spacing: clamp(-2.24px, -0.4vw, -4.48px); /* Flexible spacing */
+}
+
+.cardName {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: clamp(20px, 2.78vw, 40px); /* Flexible font size */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal; /* Ensures consistent spacing */
+  letter-spacing: clamp(-0.8px, -0.3vw, -1.6px); /* Flexible spacing */
+}
+
+
+.cardDescription{
+  color: #A4A7AC;
+
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+
+.servicesContainer{
+  color: white;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 5vw, 80px);
+  padding-left: clamp(10px, 2.5vw, 20px);
+  padding-right: clamp(10px, 2.5vw, 20px);
+  padding-top: clamp(88px, 10vw, 176px);
+  margin-bottom: clamp(88px, 10vw, 176px);
+  gap: 80px 32px;
+}
+
+.heading{
+  color: #FFF;
+
+  font-family: 'Poppins', sans-serif; /* Ensure font is imported properly */
+  font-size: clamp(32px, 5vw, 56px); /* Scales between 32px and 56px based on viewport width */
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2; /* Relative line height for consistent scaling */
+  letter-spacing: clamp(-1px, -0.5vw, -2.24px); /* Dynamically adjusts letter spacing */  
+  text-align: left;  
+}
+
+.cardsContainer {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(1, 1fr); /* Default: 1 column */
+  gap: 32px 16px;
+}
+
+@media (min-width: 760px) and (max-width: 1280px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for 500px to 829px */
+    
+  }
+  
+}
+
+@media (min-width: 1280px) {
+  .cardsContainer {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for 830px and above */
+  }
+}
+
+@media (max-width:760px){
+  .heading{
+    text-align: center;
+  }
+  .cardContainer{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
