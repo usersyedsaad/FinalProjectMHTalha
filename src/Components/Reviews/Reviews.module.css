@@ -1,0 +1,159 @@
+.reviewsSection {
+  margin-top: clamp(80px, 12.5vw, 180px);
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wantToSeeMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: clamp(80px, 12.5vw, 180px);
+}
+
+.wantToSeeMore h4 {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: clamp(28px, 3.89vw, 56px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: clamp(-1px, -0.16vw, -2.24px);
+}
+
+.wantToSeeMore p {
+  color: #A4A7AC;
+  font-family: Poppins;
+  font-size: clamp(16px, 2.22vw, 32px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: clamp(-0.64px, -0.09vw, -1.28px);
+}
+
+.highlight {
+  color: #01B7C3;
+}
+
+.reviewContainer {
+  display: flex;
+  gap: clamp(20px, 3.4vw, 49px);
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(96px, 13.33vw, 192px);
+}
+
+.textContent h4 {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: clamp(28px, 3.89vw, 56px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: clamp(-1px, -0.16vw, -2.24px);
+}
+
+.reviewContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(20px, 3.89vw, 56px);
+}
+
+.review {
+  width: clamp(200px, 49.86vw, 717px);
+  height: auto;
+}
+
+.review p {
+  color: #A4A7AC;
+  font-family: Poppins;
+  font-size: clamp(14px, 1.53vw, 22px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.lowerSection {
+  display: flex;
+  align-items: center;
+  gap: clamp(80px, 24.58vw, 354px);
+}
+
+.brandSection {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1px, 0.14vw, 2px);
+}
+
+.brandSection h5 {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: clamp(18px, 1.94vw, 28px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}
+
+.brandSection p {
+  color: #01B7C3;
+  font-family: Poppins;
+  font-size: clamp(14px, 1.39vw, 20px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.buttonsDiv {
+  display: flex;
+  gap: clamp(8px, 1.11vw, 16px);
+}
+
+.leftButton {
+  width: clamp(40px, 4.17vw, 60px);
+  height: clamp(40px, 4.17vw, 60px);
+  flex-shrink: 0;
+  border: 1px solid #444A55;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightButton {
+  width: clamp(40px, 4.17vw, 60px);
+  height: clamp(40px, 4.17vw, 60px);
+  flex-shrink: 0;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Image{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+@media (max-width:768px) {
+  .reviewContainer{
+    flex-direction: column;
+  }
+  .lowerSection{
+    width: 100%;
+  }
+}

@@ -37,7 +37,7 @@ const NavBar = () => {
           <li><a href="#services">Services</a></li>
           <li><a href="#resources">Resources</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><button className={styles.navButton}>Click Me</button></li>
+          <li><button className={styles.navButton}>Get a Quote</button></li>
         </ul>
       </div>
     </nav>

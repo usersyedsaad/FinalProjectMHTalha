@@ -1,7 +1,7 @@
 
 
 import styles from './About.module.css'
-import sassac from '../../assets/About/About/sassac1.png'
+import sassac from '../../assets/About/About/Sassac1.png'
 import ArrowForward from '../../assets/About/About/ArrowForward.png'
 const About = () => {
   return (

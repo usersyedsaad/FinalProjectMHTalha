@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   gap: clamp(8px, 2vw, 16px); /* Gap adjusts for screen size */
-  border-radius: clamp(16px, 3vw, 32px); /* Adaptive border-radius */
+  border-radius: 32px; /* Adaptive border-radius */
   background: #01B7C3;
   border: none;
   color: #1B2230;
@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
   gap: clamp(8px, 2vw, 16px);
-  border-radius: clamp(16px, 3vw, 32px);
+  border-radius: 32px ;
   border: 1px solid rgba(255, 255, 255, 0.20);
   background: rgba(255, 255, 255, 0.10);
   color: #FFF;
@@ -84,7 +84,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: clamp(32px, 4vw, 64px);
-  width: clamp(320px, 80vw, 1093px); /* Scales width for smaller screens */
+  width: clamp(250px, 80vw, 1093px); /* Scales width for smaller screens */
   margin-bottom: clamp(64px, 10vw, 148px);
   margin-left: clamp(16px, 5vw, 267px);
 }

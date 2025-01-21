@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 36px;
+  padding-top: clamp(24px, 2.5vw, 36px);
   z-index: 2;
   padding-left: 5.5%;
   padding-right: 5.5%;
@@ -17,32 +17,26 @@
   display: inline-flex;
   color: #a4a7ac;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: clamp(14px, 1.5vw, 16px);
   font-weight: 400;
   align-items: center;
   text-decoration: none;
 }
 
 .elipse {
-  width: 60px;
-  height: 60px;
+  width: clamp(40px, 4vw, 60px);
+  height: clamp(40px, 4vw, 60px);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
   border: 1px solid white;
-  margin-right: 16px;
-}
-
-.menu {
-  display: flex;
-  position: relative;
-  z-index: 1000;
+  margin-right: clamp(8px, 1.5vw, 16px);
 }
 
 .menuBtn {
-  height: 40px;
-  width: 40px;
+  height: clamp(30px, 3vw, 40px);
+  width: clamp(30px, 3vw, 40px);
   cursor: pointer;
   z-index: 1001; /* Ensures menu button is above the menu */
 }
@@ -50,42 +44,39 @@
 .menuItems {
   display: none; /* Initially hidden */
   flex-direction: column;
-  position: absolute; /* Positions dropdown relative to menuBtn */
-  top: 50px; /* Adjusts the position below the button */
-  right: 0; /* Aligns to the right edge */
+  position: absolute;
+  top: clamp(40px, 4vw, 50px); /* Adjusts position below the button */
+  right: 0;
   background: linear-gradient(
     0deg,
     rgba(25, 55, 109, 0.2) 0%,
     rgba(25, 55, 109, 1) 100%
   );
-  padding: 24px 33px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
-  z-index: 1000; /* Dropdown menu appears above everything */
+  padding: clamp(16px, 3vw, 24px) clamp(24px, 3.5vw, 33px);
+  box-shadow: 0 0 clamp(2px, 0.3vw, 4px) rgba(0, 0, 0, 0.25);
+  z-index: 1000;
   border-radius: 8px;
   list-style: none;
-  gap:7px;
-  width: 191px;
+  gap: clamp(4px, 1vw, 7px);
+  width: clamp(160px, 15vw, 191px);
   align-items: center;
   flex-shrink: 0;
 }
 
-.menuItems a{
+.menuItems a {
   color: var(--color-text-secondary);
-  font-size: 16px;
+  font-size: clamp(14px, 1.5vw, 16px);
   text-decoration: none;
-  margin: 8px 0;
-}
-.menuItems a:hover{
-  color: white;
+  margin: clamp(4px, 1vw, 8px) 0;
 }
 
-.menuOpen {
-  display: flex; /* Show dropdown when open */
+.menuItems a:hover {
+  color: white;
 }
 
 .navButton {
   background-color: var(--color-hl);
-  padding: 14px 32px;
+  padding: clamp(10px, 1.5vw, 14px) clamp(20px, 3vw, 32px);
   border-radius: 32px;
   border: none;
 }
@@ -95,24 +86,18 @@
     display: none; /* Hide menu button on large screens */
   }
   .menuItems {
-    display: inline-flex; /* Inline menu for larger screens */
+    display: inline-flex;
     flex-direction: row;
-    position: static; /* Default flow */
+    position: static;
     justify-content: end;
-    background: none; /* Remove background */
-    box-shadow: none; /* Remove shadow */
+    background: none;
+    box-shadow: none;
     padding: 0;
     list-style: none;
-    gap:32px;
-    width: 694px;
+    gap: clamp(24px, 2.5vw, 32px);
+    width: clamp(500px, 60vw, 694px);
   }
-  .menuItems a:hover{
-    color: white;
-  }
-  .menuItems ul{
-    list-style: none;
-  }
-  .navButton{
-    margin-left: 40px;
+  .navButton {
+    margin-left: clamp(24px, 2.5vw, 40px);
   }
 }

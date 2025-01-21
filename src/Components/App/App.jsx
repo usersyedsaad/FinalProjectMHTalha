@@ -5,6 +5,7 @@ import About from '../About/About'
 import Services from '../Services/Services';
 import Work from '../Work/Work';
 import Contact from '../Contact/Contact';
+import Reviews from '../Reviews/Reviews';
 function App() {
   return (
     <div className={styles.App}>
@@ -13,6 +14,7 @@ function App() {
       <About/>
       <Services/>
       <Work />
+      <Reviews/>
       <Contact/>
     </div>
   );
