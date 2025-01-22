@@ -117,29 +117,37 @@
   display: flex;
   gap: clamp(8px, 1.11vw, 16px);
 }
-
-.leftButton {
+.leftButton, .rightButton {
   width: clamp(40px, 4.17vw, 60px);
   height: clamp(40px, 4.17vw, 60px);
   flex-shrink: 0;
-  border: 1px solid #444A55;
+  border: 1px solid #777;
   background: transparent;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.leftButton:hover, .rightButton:hover {
+  border-color: #01B7C3;
+  background-color: rgba(1, 183, 195, 0.1);
+}
+
+.disabled {
+  border-color: #444A55; /* Make the border dull */
+  background-color: rgba(68, 74, 85, 0.2); /* Subtle dull background */
+  cursor: not-allowed; /* Change cursor to show it's disabled */
 }
 
 .rightButton {
-  width: clamp(40px, 4.17vw, 60px);
-  height: clamp(40px, 4.17vw, 60px);
-  flex-shrink: 0;
   border: 1px solid white;
-  background: transparent;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.rightButton:hover {
+  border-color: #01B7C3;
+  background-color: rgba(1, 183, 195, 0.1);
 }
 
 .Image{
