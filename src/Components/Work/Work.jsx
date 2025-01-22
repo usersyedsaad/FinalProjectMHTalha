@@ -10,7 +10,7 @@ import styles from './Work.module.css';
 
 const Work = () => {
   return (
-    <div id="Work" className={styles.container}>
+    <div id="work" className={styles.container}>
       <div className={styles.header}>
         <h4 className={styles.title}>My Work</h4>
         <p className={styles.description}>A piece from my selection of favorites</p>

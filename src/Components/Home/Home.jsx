@@ -13,7 +13,7 @@ const Home = () => {
           I Help Entrepreneurs with High-Quality &nbsp;<span className={styles.highlight}>&nbsp;&nbsp;Designs & Development&nbsp;&nbsp;</span>&nbsp;
            Solutions that Generate ROI</p></div>
         <div className={styles.socialLinks}>
-            <button className={styles.socialButton}>Get a Quote</button>
+            <button className={styles.socialButton} onClick={() => (window.location.href = "mailto:hmtalha@gmail.com")}>Get a Quote</button>
             <span>
               <span className={styles.Icons}>
                 <img src={InstagramIcon} alt="Instagram Icon" />

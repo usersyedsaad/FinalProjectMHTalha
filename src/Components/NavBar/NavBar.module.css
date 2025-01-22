@@ -39,6 +39,7 @@
   width: clamp(30px, 3vw, 40px);
   cursor: pointer;
   z-index: 1001; /* Ensures menu button is above the menu */
+  display: flex;
 }
 
 .menuItems {
@@ -72,6 +73,11 @@
 
 .menuItems a:hover {
   color: white;
+}
+.menuOpen{
+  display: flex;
+  margin-top: 30px;
+  margin-right: 50px;
 }
 
 .navButton {

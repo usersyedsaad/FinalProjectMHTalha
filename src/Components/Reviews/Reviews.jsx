@@ -5,7 +5,7 @@ import leftArrow from '../../assets/Reviews/ArrowReverses.png';
 import rightArrow from '../../assets/Reviews/ArrowForwards.png';
 const Reviews = () => {
   return (
-    <section className={styles.reviewsSection}>
+    <section id='resources' className={styles.reviewsSection}>
       <div className={styles.wantToSeeMore}>
         <h4>Want to see more?</h4>
         <p>Reach out to me <span className={styles.highlight}>HMTalha@gmail.com</span></p>

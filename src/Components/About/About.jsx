@@ -5,7 +5,7 @@ import sassac from '../../assets/About/About/Sassac1.png'
 import ArrowForward from '../../assets/About/About/ArrowForward.png'
 const About = () => {
   return (
-    <section className={styles.about}>
+    <section id='about' className={styles.about}>
       <h2 className={styles.headingOne}>I Collaborate with brands and agencies to create impactful results.</h2>
       <div className={styles.aboutMe}>
         <div className={styles.circleContainer}><img className={styles.circleImage} src={sassac} alt="Avatar" /></div>

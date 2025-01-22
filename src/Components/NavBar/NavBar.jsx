@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <nav className={styles.navBar}>
-      <a className={styles.title} href="">
+      <a className={styles.title} href="mailto:hmtalha@gmail.com">
         <span className={styles.elipse}>
           <img src={EmailIcon} alt="Email Icon" />
         </span>
@@ -22,8 +22,8 @@ const NavBar = () => {
           className={styles.menuBtn}
           src={
             menuOpen
-              ? menuOpenIcon
-              : menuCloseIcon
+              ? menuCloseIcon
+              : menuOpenIcon
           }
           alt="menu-button"
           onClick={() => setMenuOpen(!menuOpen)} // Toggle menu
@@ -31,7 +31,7 @@ const NavBar = () => {
 
         {/* Dropdown Menu */}
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+          className={`${styles.menuItems} ${menuOpen ? styles.menuOpen : ''}`}
           onClick={() => setMenuOpen(false)} // Close menu on item click
         >
           <li><a href="#about">About</a></li>
@@ -39,7 +39,7 @@ const NavBar = () => {
           <li><a href="#services">Services</a></li>
           <li><a href="#resources">Resources</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><button className={styles.navButton}>Get a Quote</button></li>
+          <li><button className={styles.navButton} onClick={() => (window.location.href = "mailto:hmtalha@gmail.com")}>Get a Quote</button></li>
         </ul>
       </div>
     </nav>
