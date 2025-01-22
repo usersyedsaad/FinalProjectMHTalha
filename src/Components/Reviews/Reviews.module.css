@@ -49,6 +49,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: clamp(96px, 13.33vw, 192px);
+  justify-content: space-between;
 }
 
 .textContent h4 {
@@ -117,11 +118,12 @@
   display: flex;
   gap: clamp(8px, 1.11vw, 16px);
 }
+
 .leftButton, .rightButton {
   width: clamp(40px, 4.17vw, 60px);
   height: clamp(40px, 4.17vw, 60px);
   flex-shrink: 0;
-  border: 1px solid #777;
+  border: 1px solid #FFF;
   background: transparent;
   border-radius: 50%;
   display: flex;
@@ -139,16 +141,35 @@
   border-color: #444A55; /* Make the border dull */
   background-color: rgba(68, 74, 85, 0.2); /* Subtle dull background */
   cursor: not-allowed; /* Change cursor to show it's disabled */
+  stroke: #444A55;
 }
 
-.rightButton {
-  border: 1px solid white;
+/* Default styles for the right arrow SVG */
+.rightButton .rightArrowIcon {
+  stroke: #FFF;
+  transition: stroke 0.3s ease;
 }
 
-.rightButton:hover {
-  border-color: #01B7C3;
-  background-color: rgba(1, 183, 195, 0.1);
+/* Default styles for the left arrow SVG */
+.leftButton .leftArrowIcon {
+  stroke: #444A55;
+  transition: stroke 0.3s ease;
 }
+
+/* Styles for enabled state on hover */
+.rightButton:hover .rightArrowIcon,
+.leftButton:hover .leftArrowIcon {
+  stroke: #01B7C3; /* Change color on hover */
+}
+
+/* Styles for disabled state */
+.disabled .rightArrowIcon,
+.disabled .leftArrowIcon {
+  stroke: #444A55; /* Dull color for disabled state */
+}
+
+
+
 
 .Image{
   width: 100%;

@@ -35,8 +35,8 @@ const NavBar = () => {
           onClick={() => setMenuOpen(false)} // Close menu on item click
         >
           <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="#resources">Resources</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><button className={styles.navButton} onClick={() => (window.location.href = "mailto:hmtalha@gmail.com")}>Get a Quote</button></li>

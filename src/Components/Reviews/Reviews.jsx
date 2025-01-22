@@ -7,7 +7,7 @@ import rightArrow from '../../assets/Reviews/ArrowForward.svg';
 const Reviews = () => {
   // Sample data to simulate review items
   const reviews = [
-    { name: 'Danny Giljess', review: 'One of the biggest challenges we face as business owners is high client expectations given the rapid evolution of different payment methods. Talha always listens to our needs. There’s always a lot of respect there, and his professionalism makes the business relationship enjoyable. Thank you' },
+    { name: 'Danny Giljess', review: 'One of the biggest challenges we face as business owners is high client expectations given the rapid evolution of different payment methods. Talha always listens to our needs. There’s always a lot of respect there, and his professionalism makes the business relationship enjoyable. Thank you', image: Danny},
     { name: 'John Doe', review: 'The professionalism makes the relationship enjoyable...' },
     { name: 'Jane Smith', review: 'A pleasure working with Talha, very responsive...' },
   ];
@@ -62,7 +62,7 @@ const Reviews = () => {
             </div>
           </div>
         </div>
-        <div className={styles.imageDiv}><img className={styles.Image} src={Danny} alt="Danny Giljess" /></div>
+        <div className={styles.imageDiv}><img className={styles.Image} src={reviews[currentIndex].image} alt="Review Image" /></div>
       </div>
     </section>
   );
