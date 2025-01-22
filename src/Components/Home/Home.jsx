@@ -6,7 +6,7 @@ import WhatsappIcon from '../../assets/Home/Home/whatsappIcon.svg'
 import MarqueeCarousel from '../Carousal/Carousal';
 const Home = () => {
   return (
-    <section className={styles.home}>
+    <section id='home' className={styles.home}>
       <div className={styles.centerContent}>
       <div className={styles.textContent}><h1 className={styles.heading}>Hi HM Talha here 👋</h1>
         <p className={styles.paragraph}>

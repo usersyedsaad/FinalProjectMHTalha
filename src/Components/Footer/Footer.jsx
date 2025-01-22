@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.rightSection}>
         <p>Back to top</p>
         <button className={styles.ArrowUpButton}>
-          <img className={styles.ArrowUp} src={ArrowUp} alt="Arrow Up" />
+          <img className={styles.ArrowUp} src={ArrowUp} alt="Arrow Up" onClick={()=>{document.getElementById('home').scrollIntoView({block: 'start'})}}/>
         </button>
       </div>
     </footer>
