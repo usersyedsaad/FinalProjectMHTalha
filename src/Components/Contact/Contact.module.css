@@ -18,6 +18,15 @@
   line-height: normal;
   letter-spacing: clamp(-0.2px, -0.4vw, -0.4px);
 }
+.blueButton p{
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: clamp(16px, 2vw, 20px); /* Font size scales */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: clamp(-0.2px, -0.4vw, -0.4px);
+}
 
 .grayButton {
   display: flex;

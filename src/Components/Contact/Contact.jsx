@@ -10,7 +10,7 @@ const Contact = () => {
         <p>Get in touch if you want to discuss your project , learn more about my methodologies, or just to <span className={styles.highlight}>say hello!</span></p>
       </div>
       <div className={styles.socialButtons}>
-        <button className={ styles.blueButton} onClick={() => (window.location.href = "mailto:hmtalha@gmail.com")}>HMTalha@gmail.com <img className={styles.blackArrow} src={ArrowForward} alt="Arrow Forward" /></button>
+        <button className={ styles.blueButton} onClick={() => (window.location.href = "mailto:hmtalha@gmail.com")}><p>HMTalha@gmail.com</p> <img className={styles.blackArrow} src={ArrowForward} alt="Arrow Forward" /></button>
         <span className={styles.grayButtons}>
           <button className={styles.grayButton}>linked in</button>
           <button className={styles.grayButton}>Email</button>
