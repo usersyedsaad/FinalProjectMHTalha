@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './Reviews.module.css'
 import Danny from '../../assets/Reviews/Danny.png'
-import leftArrow from '../../assets/Reviews/ArrowReverses.png';
-import rightArrow from '../../assets/Reviews/ArrowForwards.png';
+import leftArrow from '../../assets/Reviews/ArrowReverse.svg';
+import rightArrow from '../../assets/Reviews/ArrowForward.svg';
 const Reviews = () => {
   return (
     <section id='resources' className={styles.reviewsSection}>
