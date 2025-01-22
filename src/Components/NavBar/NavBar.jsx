@@ -1,6 +1,6 @@
 import styles from "./NavBar.module.css";
-import menuOpenIcon from '../../assets/Home/Home/menuOpenIcon.png'
-import menuCloseIcon from '../../assets/Home/Home/menuCloseIcon.png'
+import menuOpenIcon from '../../assets/NavBar/menuOpenIcon.png'
+import menuCloseIcon from '../../assets/NavBar/menuCloseIcon.png'
 import EmailIcon from '../../assets/NavBar/EmailIcon.svg'
 import { useState } from "react";
 
